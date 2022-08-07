@@ -5,7 +5,7 @@
 }
 
 body {
-  margin-top: 100px;
+  margin: 100px 0;
 }
 
 h1 {
@@ -32,18 +32,14 @@ p {
   line-height: 1.5;
 }
 
-.links {
+.navigation-links {
   display: flex;
   margin-top: 40px;
   justify-content: center;
 }
 
-.links a {
+.navigation-links a {
   margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
 }
 
 .primary-link {
@@ -56,6 +52,9 @@ p {
   color: white;
 }
 
+.primary-link:hover {
+  color: white;
+}
 .secondary-link {
   border-radius: 4px;
   padding: 20px 15px;
@@ -83,4 +82,25 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 32px;
+  }
+
+  h2,
+  p,
+  .project-link {
+    text-align: center;
+  }
+
+  .project-link {
+    display: block;
+    margin: 0 20px;
+  }
 }
